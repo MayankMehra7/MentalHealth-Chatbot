@@ -22,4 +22,35 @@
 git clone https://github.com/your-username/mentalhealth-gpt.git
 cd mentalhealth-gpt
 ```
+### 2. Create a Virtual Environment
+# Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+# Linux/Mac
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+### 3. Install Dependencies 
+```bash
+pip install -r requirements.txt
+```
+### 4. Create a .env File
+```bash
+Your api key=your_google_generative_ai_api_key
+```
+### 5. 📁 File Structure
+```bash
+mentalhealth-gpt/
+│
+├── mental_health_bot.py       # Core bot logic
+├── VectorStoreManger.py       # Handles vector store operations (e.g., saving/loading embeddings)
+├── .env                       # Environment variables (API key)
+├── requirements.txt           # Python dependencies
+├── run_bot.bat                # Windows launch script
+└── README.md                  # Project documentation
+```
+
 
